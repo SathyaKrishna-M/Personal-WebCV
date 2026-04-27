@@ -76,6 +76,19 @@ export default function About() {
           ))}
         </div>
 
+        {/* achievements */}
+        <motion.div initial={{ opacity: 0, y: 18 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }}
+          style={{ marginTop: 32, ...card, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '24px' }}
+          onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,201,167,0.25)'; (e.currentTarget as HTMLDivElement).style.background = 'rgba(0,201,167,0.04)' }}
+          onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(255,255,255,0.07)'; (e.currentTarget as HTMLDivElement).style.background = 'rgba(255,255,255,0.03)' }}
+        >
+          <div style={{ fontSize: 13, color: '#64748b', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Key Achievement</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <span style={{ fontSize: 24 }}>🏆</span>
+            <span style={{ fontSize: 18, color: '#e2e8f0', fontWeight: 600 }}>AlgoMath Datathon 2026 Winner</span>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   )

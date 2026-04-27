@@ -13,7 +13,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false)
 
   const copy = () => {
-    navigator.clipboard.writeText('luckyindian994@gmail.com')
+    navigator.clipboard.writeText('sathyamaragani@gmail.com')
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -57,11 +57,11 @@ export default function Contact() {
                 </div>
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontSize: 12, color: '#64748b', marginBottom: 3 }}>Email me at</div>
-                  <div style={{ fontWeight: 600, color: '#e2e8f0', fontSize: 14 }}>luckyindian994@gmail.com</div>
+                  <div style={{ fontWeight: 600, color: '#e2e8f0', fontSize: 14 }}>sathyamaragani@gmail.com</div>
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 10 }}>
-                <a href="mailto:luckyindian994@gmail.com"
+                <a href="mailto:sathyamaragani@gmail.com"
                   style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '11px 0', borderRadius: 11, background: '#00c9a7', color: '#0b0f1a', fontWeight: 700, fontSize: 13, textDecoration: 'none', transition: 'background 0.2s', fontFamily: 'inherit' }}
                   onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.background = '#00dbb6'}
                   onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.background = '#00c9a7'}>

@@ -51,7 +51,7 @@ function Particles() {
 
 const SOCIALS = [
   { icon: <GH />, href: 'https://github.com/SathyaKrishna-M', label: 'GitHub' },
-  { icon: <ML />, href: 'mailto:luckyindian994@gmail.com', label: 'Email' },
+  { icon: <ML />, href: 'mailto:sathyamaragani@gmail.com', label: 'Email' },
 ]
 
 export default function Hero() {
